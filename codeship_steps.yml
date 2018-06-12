@@ -1,0 +1,11 @@
+- type: parallel
+  name: perfect_hello_node_parallel_step
+  steps:
+    - service: codeship_example
+      command: printenv
+    - service: codeship_example
+      command: /bin/bash -c 'ls && echo ${CI_BUILD_ID}'
+- name: example_tagged_step
+  tag: master
+  service: codeship_example
+  command: echo "Deploy Here!"
