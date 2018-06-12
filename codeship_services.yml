@@ -1,0 +1,4 @@
+codeship_example:
+  build:
+    image: perfect_hello_node
+    dockerfile: Dockerfile
