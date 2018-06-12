@@ -1,0 +1,9 @@
+- type: parallel
+  name: perfect_hello_node_parallel_step
+  steps:
+    - service: codeship_example
+      command: printenv
+- name: example_tagged_step
+  tag: master
+  service: codeship_example
+  command: echo "Deploy Here!"
