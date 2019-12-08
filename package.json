@@ -4,6 +4,8 @@
   "description": "The perfect Hello World repo",
   "main": "app.js",
   "scripts": {
+    "start": "node .",
+    "build": "echo 'Give me something to Build!'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
