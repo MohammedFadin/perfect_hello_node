@@ -1,11 +1,15 @@
 FROM node:alpine
 
 RUN mkdir ~/app
+
 WORKDIR ~/app
 
-COPY . .
+COPY package*.json ./
 
 RUN npm install
 
-CMD node app.js
+COPY . .
 
+EXPOSE 8080
+
+CMD [ "node", "app.js" ]
