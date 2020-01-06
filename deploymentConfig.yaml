@@ -12,7 +12,7 @@ spec:
         deploymentconfig: my-perfect-node-app-2020
     spec:
       containers:
-        - image: my-perfect-node-app
+        - image: docker-registry.default.svc:5000/kabanero/my-perfect-node-app
           name: my-perfect-node-app
           ports:
             - containerPort: 8080
